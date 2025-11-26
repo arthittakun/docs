@@ -4,7 +4,7 @@
 
 ## Base URL
 ```
-http://localhost:8108/api/ai/test
+http://api.mefarmhug.com/api/ai/test
 ```
 
 ---
@@ -20,7 +20,7 @@ http://localhost:8108/api/ai/test
 
 **Request:**
 ```bash
-GET http://localhost:8108/api/ai/test/
+GET http://api.mefarmhug.com/api/ai/test/
 ```
 
 **Response:**
@@ -57,13 +57,13 @@ Authorization: Bearer <your_access_token>
 
 **Request Example:**
 ```bash
-POST http://localhost:8108/api/ai/test/token?FarmUserPlotId=0c358862-8c2c-47d2-b80e-c2527e28f2e5
+POST http://api.mefarmhug.com/api/ai/test/token?FarmUserPlotId=0c358862-8c2c-47d2-b80e-c2527e28f2e5
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 ```
 
 **cURL Example:**
 ```bash
-curl -X POST "http://localhost:8108/api/ai/test/token?FarmUserPlotId=0c358862-8c2c-47d2-b80e-c2527e28f2e5" \
+curl -X POST "http://api.mefarmhug.com/api/ai/test/token?FarmUserPlotId=0c358862-8c2c-47d2-b80e-c2527e28f2e5" \
   -H "Authorization: Bearer YOUR_TOKEN_HERE"
 ```
 
@@ -105,12 +105,12 @@ curl -X POST "http://localhost:8108/api/ai/test/token?FarmUserPlotId=0c358862-8c
 
 **Request:**
 ```bash
-GET http://localhost:8108/api/ai/test/product
+GET http://api.mefarmhug.com/api/ai/test/product
 ```
 
 **cURL Example:**
 ```bash
-curl -X GET "http://localhost:8108/api/ai/test/product"
+curl -X GET "http://api.mefarmhug.com/api/ai/test/product"
 ```
 
 **Response:**
@@ -204,20 +204,20 @@ curl -X GET "http://localhost:8108/api/ai/test/product"
 ### ตัวอย่างที่ 1: ตรวจสอบ API
 ```bash
 # ตรวจสอบว่า API ทำงานหรือไม่
-curl http://localhost:8108/api/ai/test/
+curl http://api.mefarmhug.com/api/ai/test/
 ```
 
 ### ตัวอย่างที่ 2: สร้าง Token
 ```bash
 # สร้าง token สำหรับ WebSocket
-curl -X POST "http://localhost:8108/api/ai/test/token?FarmUserPlotId=abc123" \
+curl -X POST "http://api.mefarmhug.com/api/ai/test/token?FarmUserPlotId=abc123" \
   -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
 ```
 
 ### ตัวอย่างที่ 3: ดึงข้อมูลสินค้า
 ```bash
 # ดึงข้อมูลสินค้าทั้งหมด
-curl http://localhost:8108/api/ai/test/product
+curl http://api.mefarmhug.com/api/ai/test/product
 ```
 
 ---
@@ -227,7 +227,7 @@ curl http://localhost:8108/api/ai/test/product
 ### Setup:
 1. สร้าง Collection ใหม่ชื่อ "MeFarm Test API"
 2. ตั้งค่า Environment Variable:
-   - `base_url`: `http://localhost:8108`
+   - `base_url`: `http://api.mefarmhug.com`
    - `access_token`: `<your_token>`
 
 ### Requests:
@@ -259,3 +259,4 @@ curl http://localhost:8108/api/ai/test/product
 ## 📞 Support
 
 หากมีปัญหาหรือข้อสงสัย กรุณาติดต่อทีมพัฒนา
+
